@@ -1,0 +1,62 @@
+{
+    "compressed_db": false,
+    "checkpoint": "./checkpoint/pretrained/uniter-base.pt",
+    "output_dir": "./storage/class/first",
+    "max_txt_len": 100,
+    "conf_th": 0.2,
+    "max_bb": 100,
+    "min_bb": 10,
+    "num_bb": 36,
+    "train_batch_size": 40,
+    "negative_size": 1,
+    "inf_minibatch_size": 40,
+    "margin": 0.2,
+    "gradient_accumulation_steps": 4,
+    "learning_rate": 5e-05,
+    "valid_steps": 2000,
+    "num_train_steps": 20000,
+    "optim": "adamw",
+    "betas": [
+        0.9,
+        0.98
+    ],
+    "dropout": 0.1,
+    "weight_decay": 0.01,
+    "grad_norm": 2.0,
+    "warmup_steps": 2000,
+    "seed": 42,
+    "full_val": true,
+    "fp16": true,
+    "n_workers": 4,
+    "pin_mem": true,
+
+    "model_config": "./config/uniter-prompt.json",
+
+    "------------new_config------------":"",
+    "compare_with_own": false,
+    "add_two_vis": false, 
+    "new_two_vis": true,
+  
+  
+    "add_prompt": true,
+    "new_prompt": true,
+    "per_token": false,
+    "per_token_dim": 128,
+    "prefix_num" : 20,
+    "prompt_input": "two",
+  
+    "add_embed": false,
+    "new_embed": true,
+    "embed_dim": 128,
+    "norm_embed": false,
+    "c_loss": false,
+    "map_path": "./user_map/",
+    "user_num": 20,
+    "c_num": 10,
+    "beta": 20,
+  
+    "pretrain_encoder": true,
+    "freeze_base": true,
+    "lr_base": 0
+    
+}

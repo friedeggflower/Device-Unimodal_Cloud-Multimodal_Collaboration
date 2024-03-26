@@ -1,0 +1,7 @@
+lmdb
+lz4
+msgpack
+msgpack_numpy
+cytoolz
+tensorboardX
+nltk
